@@ -1,4 +1,3 @@
-
 // cria as variáveis com os parâmetros necessários para o jogo
 let listaDeNumerosSorteados = [];
 let numeroLimite = 10;
@@ -18,7 +17,7 @@ function exibirMensagemInicial () {
     exibirTextoNaTela('p', `Escolha um número entre 1 e ${numeroLimite}`);
 }
 
-// função que verifica as tentativas de chute do jogador
+// função que verifica as tentativas de chute do jogador e retorna se número é maior ou menor até acertar
 function verificarChute() {
     let chute = document.querySelector('input').value;
     if (chute == numeroSecreto) {
